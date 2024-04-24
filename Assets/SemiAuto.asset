@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdea08999462e794e9107c3ec3e051c9, type: 3}
+  m_Name: SemiAuto
+  m_EditorClassIdentifier: 
+  weaponName: 
+  icon: {fileID: 0}
+  damage: 1
+  bulletReference: {fileID: 2465024826525035929, guid: 2a7beb7d25b9cb942ae944316b834eb1, type: 3}
+  fireMode: Semi-Automatic
+  fireRate: 0.2
+  bulletsPerClick: 4
+  magazineCapacity: 60
+  reloadTime: 2
