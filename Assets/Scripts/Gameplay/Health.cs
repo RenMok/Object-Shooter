@@ -1,12 +1,12 @@
+
 using UnityEngine.Events;
-using UnityEngine;
 
 public class Health
 {
     private int currentHealth;
     public UnityEvent<int> OnHealthChanged;
-    
-    
+
+
     public void DecreaseLife(int damage)
     {
         currentHealth -= damage;
@@ -22,9 +22,10 @@ public class Health
     {
         // for damage over time?
     }
-    public void IncreaseLife (int heal)
+    public void IncreaseLife(int heal)
     {
-        currentHealth += heal;  
+        currentHealth += heal;
+        OnHealthChanged.Invoke(currentHealth);
 
     }
     public int GetHealth()

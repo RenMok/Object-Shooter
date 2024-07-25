@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdea08999462e794e9107c3ec3e051c9, type: 3}
+  m_Name: LaserSighted
+  m_EditorClassIdentifier: 
+  WeaponName: LaserSighted
+  Type: 0
+  Status: 0
+  onFireSound: {fileID: 8300000, guid: a3c7fbcf90609204fa144297e9a7dc43, type: 3}
+  shotDelay: 0
+  bulletReference: {fileID: 4313073615988203562, guid: cdf4f2529bc1b1b448c46ed96c123157, type: 3}
+  damage: 8
+  lifeSpan: 0
+  shotPerClick: 1
