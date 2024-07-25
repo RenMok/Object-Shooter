@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class UIMainMenu : MonoBehaviour
@@ -24,18 +23,18 @@ public class UIMainMenu : MonoBehaviour
     }
     public void AdjustSoundLevel(float level)
     {
-        AudioListener.volume = level;   
+        AudioListener.volume = level;
     }
     private void HighlightPanel()
     {
-       if (RectTransformUtility.RectangleContainsScreenPoint(panelHighlight, Input.mousePosition))
+        if (RectTransformUtility.RectangleContainsScreenPoint(panelHighlight, Input.mousePosition))
         {
             highlightAnimator.SetBool("Highlighted", true);
         }
-       else
+        else
         {
             highlightAnimator.SetBool("Highlighted", false);
         }
-     
+
     }
 }

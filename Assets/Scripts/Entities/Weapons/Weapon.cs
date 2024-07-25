@@ -1,7 +1,5 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 
 // The weapon class is a universal weapon, which receives weapon data to define its behaviour

@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Build.Player;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Singleton;
-    
+
     [SerializeField] private Transform origin;
     [SerializeField] private KillCounter score;
     [SerializeField] private PickUpSpawner pickupSpawner;
@@ -16,7 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float gameOverTransitionTime; // Waits for explosion animations to finish
 
     public List<Enemy> liveEnemies = new(); // Lists all currently active enemies
-   
+
     private void Awake()
     {
         if (Singleton != null && Singleton != this)
@@ -45,7 +43,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(gameOverTransitionTime);
         SceneManager.LoadScene(2);
-        
+
     }
     // Functions as a late start to ensure GameManager can find references to important objects
     public IEnumerator StartGame()
@@ -70,5 +68,5 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(1);
     }
     */
- 
+
 }

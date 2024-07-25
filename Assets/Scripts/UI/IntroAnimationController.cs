@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class IntroAnimationController : MonoBehaviour
@@ -16,12 +15,12 @@ public class IntroAnimationController : MonoBehaviour
     private void Start()
     {
         StartCoroutine(OffsetActivation());
-        
+
     }
     private IEnumerator OffsetActivation()
-    { 
-        foreach (Animator animator in animators) 
-        { 
+    {
+        foreach (Animator animator in animators)
+        {
             yield return new WaitForSecondsRealtime(offsetTime);
             animator.enabled = true;
         }
